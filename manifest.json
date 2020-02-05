@@ -1,9 +1,9 @@
 {
     "name": "Find Images",
     "description": "Quickly find images from selected text",
-    "version": "1.0",
+    "version": "1.1",
     "manifest_version": 2,
-    "permissions": ["contextMenus", "tabs", "activeTab", "notifications"],
+    "permissions": ["contextMenus"],
     "icons": { 
         "16": "16.png",
         "48": "48.png",
