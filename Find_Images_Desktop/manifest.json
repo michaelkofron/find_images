@@ -1,0 +1,17 @@
+{
+    "name": "Find Images",
+    "description": "Quickly find images from selected text",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": ["contextMenus", "tabs", "<all_urls>", "notifications"],
+    "icons": { 
+        "16": "16.png",
+        "48": "48.png",
+        "128": "128.png"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    }
+    
+}
