@@ -1,11 +1,7 @@
 let googleContextMenuItem
 let imgurContextMenuItem
 let flickrContextMenuItem
-
-let defaultItem = {
-    "id": "new",
-    "contexts": ["selection"]
-}
+let gettyContextMenuItem
 
 let menuArray = [
     googleContextMenuItem = {
@@ -26,20 +22,10 @@ let menuArray = [
     }
 ]
 
-menuArray.forEach(function(menuItem){
-    menuItem["contexts"] = ["selection"]
-})
-
-chrome.runtime.onMessage.addListener(function(request) {
-    const item = request.trim()
-
-    defaultItem["title"] = `find images for "${item}" on... 👀`
-
-    chrome.contextMenus.removeAll(function() {
-        chrome.contextMenus.create(defaultItem)
-        menuArray.forEach(function(menuItem){
-            chrome.contextMenus.create(menuItem)
-        })
+chrome.contextMenus.removeAll(function() {
+    menuArray.forEach(function(menuItem){
+        menuItem["contexts"] = ["selection"]
+        chrome.contextMenus.create(menuItem)
     })
 })
 
