@@ -1,4 +1,4 @@
-# find_images
+# Find Images for Google Chrome
 Small addition to the Google Chrome context menu that quickly finds images of selected texts through multiple useful platforms. 
 
 ![](images/Finches.png)
