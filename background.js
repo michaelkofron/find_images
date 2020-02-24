@@ -1,7 +1,4 @@
-let googleContextMenuItem
-let imgurContextMenuItem
-let flickrContextMenuItem
-let gettyContextMenuItem
+let googleContextMenuItem, imgurContextMenuItem, flickrContextMenuItem, gettyContextMenuItem
 
 let menuArray = [
     googleContextMenuItem = {
